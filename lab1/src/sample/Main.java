@@ -73,7 +73,8 @@ public class Main extends Application{
         sunLine3.setStroke(sunBody);
         sunLine3.setStrokeWidth(10);
         root.getChildren().add(sunLine3);
-        Line sunLine4 = new Line (appCX - 150, appCY + 150, appCX + 150, appCY - 150);
+        Line sunLine4 = new Line (appCX -
+                150, appCY + 150, appCX + 150, appCY - 150);
         sunLine4.setStroke(sunBody);
         sunLine4.setStrokeWidth(10);
         root.getChildren().add(sunLine4);
