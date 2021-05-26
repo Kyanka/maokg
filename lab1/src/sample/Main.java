@@ -16,9 +16,7 @@ public class Main extends Application{
     Color sunBody = Color.rgb(255,255,0);
     Color sunMouth = Color.rgb(255,0,0);
     Color sunEye = Color.rgb(0,128,128);
-    public static void main (String args[]) {
-        launch(args); // main method
-    }
+
     @Override
     public void start(Stage primaryStage) // start - is the main entry point fo all JavaFX applications
     {
