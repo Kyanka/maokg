@@ -55,8 +55,8 @@ public class Main extends Application{
         scaleFrom.setToY(1);
 
         ScaleTransition scaleTo = new ScaleTransition(Duration.millis(time), root);
-        scaleTo.setToX(0);
-        scaleTo.setToY(0);
+        scaleTo.setToX(0.5);
+        scaleTo.setToY(0.5);
 
         SequentialTransition scale = new SequentialTransition();
         scale.getChildren().addAll(
@@ -68,12 +68,12 @@ public class Main extends Application{
         //translate
         TranslateTransition translateTo = new TranslateTransition(Duration.millis(time), root);
         translateTo.setFromY(0);
-        translateTo.setToY(250);
+        translateTo.setToY(-250);
         translateTo.setCycleCount(Timeline.INDEFINITE);
         translateTo.setAutoReverse(true);
 
         TranslateTransition translateFrom = new TranslateTransition(Duration.millis(time), root);
-        translateFrom.setFromY(250);
+        translateFrom.setFromY(-250);
         translateFrom.setToY(0);
         translateFrom.setCycleCount(Timeline.INDEFINITE);
         translateFrom.setAutoReverse(true);
